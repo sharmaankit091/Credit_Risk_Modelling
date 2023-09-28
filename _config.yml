@@ -1,5 +1,6 @@
-title: Minimal theme
+title: Credit Risk Modelling
 logo: /assets/img/credit_risk_modelling.jpg
 description: Minimal is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
+theme: jekyll-theme-minimal
