@@ -1,1 +1,8 @@
-# Credit_Risk_Modelling
+# Credit Risk Modelling
+Credit Risk Modeling is a technique used by lenders to determine the level of credit risk associated with extending credit to a borrower
+
+
+## Why Credit Risk is important?
+Do you remember or aware of 2008 recession? In US, mortgage home loan were given to low creditworthy customers (individuals with poor credit score). Poor credit score indicates that one is highly likely to default on loan which means they are risky customers for bank. To compensate risk, banks used to charge higher interest rate than the normal standard rate. Banks funded these loans by selling them to investors on the secondary market. The process of selling them to investors is a legal financial method which is called Collateralized debt obligations (CDO). In 2004-2007, these CDOs were considered as low-risky financial instrument (highly rated).
+
+As these home loan borrowers had high chance to default, many of the them started defaulting on their loans and banks started seizing (foreclose) their property. The real estate bubble burst and a sharp decline in home prices. Many financial institutions globally invested in these funds resulted to a recession. Banks, investors and re-insurers faced huge financial losses and bankruptcy of many financial and non-financial firms. Even non-financial firms were impacted badly because of either their investment in these funds or impacted because of a very low demand and purchasing activities in the economy. In simple words, people had a very little or no money to spend which leads to many organisations halted their production. It further leads to huge job losses. US Government bailed out many big corporate houses during recession. You may have understood now why credit risk is so important. The whole economy can be in danger if current and future credit losses are not identified or estimated properly.
