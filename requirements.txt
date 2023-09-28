@@ -1,0 +1,6 @@
+###### Requirements with or without Version Specifiers ######
+black
+pandas
+pylint
+pytest
+teamcity-messages

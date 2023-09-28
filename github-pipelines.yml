@@ -1,0 +1,32 @@
+#  Template python-build
+
+#  This template allows you to validate your python code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: python:3.10
+
+pipelines:
+  pull-requests: # this will trigger pipeline run on any branch that has a PR open
+    "**": # this runs as default for any branch not elsewhere defined
+      - step:
+          name: Pull Request Opened and Testing
+          caches:
+            - pip
+          script:
+            - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+            - black .
+            - pylint --exit-zero --output-format=teamcity.pylint_reporter.TeamCityReporter src test
+            - pytest -v test/* --junitxml=test-reports/report.xml
+            - echo "All Tests Passed Successfully"
+  branches:
+    '{master}':
+      - step:
+          name: Changes to master upon merge
+          caches:
+            - pip
+          script:
+            - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+            - black .
+            - pylint --exit-zero --output-format=teamcity.pylint_reporter.TeamCityReporter src test
+            - pytest -v test/* --junitxml=test-reports/report.xml
+            - echo "All Tests Passed Successfully"
